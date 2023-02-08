@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício Semana 1</title>
+  </head>
+  <body>
+    <h1>Exercícios Semana 1</h1>
+  </body>
+  <script>
+    var aluno = [
+      {
+        name: "Lucas",
+        height: 1.72,
+        age: 22,
+        gender: "Masculino",
+        class: "trindade",
+        matematica: 8,
+      },
+      {
+        name: "João",
+        height: 1.82,
+        age: 23,
+        gender: "Masculino",
+        class: "trindade",
+        matematica: 6,
+      },
+      {
+        name: "Maria",
+        height: 1.65,
+        age: 23,
+        gender: "Feminino",
+        class: "trindade",
+        matematica: 9,
+      },
+      {
+        name: "Julia",
+        height: 1.75,
+        age: 22,
+        gender: "Feminino",
+        class: "trindade",
+        matematica: 10,
+      },
+      {
+        name: "Leticia",
+        height: 1.7,
+        age: 23,
+        gender: "Feminino",
+        class: "trindade",
+        matematica: 5,
+      },
+    ];
+    console.log(aluno);
+
+    const mediaMat =
+      (aluno[0].matematica +
+        aluno[1].matematica +
+        aluno[2].matematica +
+        aluno[3].matematica +
+        aluno[4].matematica) /
+      5;
+    console.log("A média da turma é " + mediaMat);
+
+    function calcAprov(student, nota) {
+      if (nota >= 7) {
+        return "Parabéns " + student + " você foi aprovado(a).";
+      } else {
+        return student + " não foi aprovado(a).";
+      }
+    }
+    console.log(calcAprov(aluno[0].name, aluno[0].matematica));
+  </script>
+</html>
